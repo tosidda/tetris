@@ -46,7 +46,7 @@ const localTetris = tetrisManager.createPlayer();
 localTetris.element.classList.add('local')
 localTetris.run()
 const connectionMananger = new ConnectionMananger(tetrisManager);
-connectionMananger.connect('ws://sid-tetris.herokuapp.com:9000')
+connectionMananger.connect('wss://sid-tetris.herokuapp.com:9000')
 
 
 const keyListener = (event) => {
